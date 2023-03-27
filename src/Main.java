@@ -7,15 +7,16 @@ public class Main {
         System.out.println("Age = " + tim.getAge());
         System.out.println("Pay = " + tim.collectPay());
 
-        Employee jennifer =  new Employee("Jennifer", "11/11/1990", "03/03/2020");
+        SalariedEmployee jennifer =  new SalariedEmployee("Jennifer", "11/11/1990", "03/03/2020",
+                35000);
 
         System.out.println(jennifer);
         System.out.println("Age = " + jennifer.getAge());
         System.out.println("Pay = " + jennifer.collectPay());
+        System.out.println("Jennifer's Paycheck = $" + jennifer.collectPay());
 
-
-
-
+        jennifer.retire();
+        System.out.println("Jennifer's Pension check = $" + jennifer.collectPay());
 
 
 
